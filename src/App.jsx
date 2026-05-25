@@ -180,7 +180,7 @@ export default function App() {
       historyRef.current = [...apiMessages, { role: "assistant", content: reply }];
       setMessages(m => [...m, { role: "assistant", text: reply }]);
     } catch (e) {
-      setMessages(m => [...m, { role: "assistant", text: `Error: ${e.message}. Try clicking "Change API Key" and re-entering your key.` }]);
+      setMessages(m => [...m, { role: "assistant", text: `Error: ${e.message}`
     }
     setThinking(false);
   };
